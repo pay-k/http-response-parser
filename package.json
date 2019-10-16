@@ -1,0 +1,23 @@
+{
+  "name": "@payk/http-response-parser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --opts .mocharc",
+    "test-juint": "mocha --opts .mocharc --reporter mocha-junit-reporter",
+    "prebuild": "rimraf dist",
+    "build": "tsc",
+    "publish-package": "npm run-script build && npm publish"
+  },
+  "author": "Or Romano",
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^3.6.3"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.0",
+    "source-map-support": "^0.5.13",
+    "ts-node": "^8.3.0"
+  }
+}
